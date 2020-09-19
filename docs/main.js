@@ -7,4 +7,19 @@ function expand() {
 function show() {
     document.getElementById('tops').style.display = "block";
     console.log("what")
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
