@@ -1,109 +1,96 @@
-html {
-    position: relative;
-    min-height: 100%;
-    }
-    nav{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 100px;
-        background-color: rgb(7, 22, 36);
-        padding: 20px;
-    }
-    #name-nav{
-        color: rgb(216, 216, 216);
-        font-size: 100;
-        margin-left: 400px;
-    
-    }
-    #menu-container{
-        position: absolute;
-        background-color:rgb(227, 231, 235);
-        left: 3%;
-        top: 300px;
-        width: 50%;
-        min-height: 1350px;
-        padding-bottom: 50px;
-        margin-bottom: 20px;
-    }
-    #avatar-container{
-        position: absolute;
-        background-color:rgb(227, 231, 235);
-        right: 3%;
-        top: 300px;
-        width: 600px;
-        min-height: 600px;
-        margin-bottom: 20px; 
-    }
-    h2{
-        margin: 10px;
-        color: rgb(216, 216, 216);
-        text-transform: uppercase;
-    }
-    
-    .place{
-        min-height: 280px;
-    }
-    .toptitle{
-        min-height: 50px;
-        background-color: rgb(83, 82, 87);
-        width: 600px;
-       margin-left: 50px;
-       /* background-color: rgb(43, 47, 49); */
-    }
-    #tops{
-         
-        
-        left: 10%;
-        width: 600px;
-        background-color: rgb(43, 47, 49);
-        min-height: 250px;
-        align-content: center;
-       margin-bottom: 50px;
-       margin-left: 50px;
-    }
-    #bottoms{
-      
-        margin-bottom: 50px;
-        margin-left: 50px;
-        background-color: rgb(43, 47, 49);
-        left: 10%;
-        width: 600px;
-        min-height: 250px;
-        align-content: center;
-    }
-    #shoes{
-        margin-bottom: 50px;
-        margin-left: 50px;
-         
-       
-        background-color: rgb(43, 47, 49);
-        left: 10%;
-        width: 600px;
-        min-height: 250px;
-        align-content: center;
-    }
-    #accessories{
-        
-        margin-bottom: 50px;
-       margin-left: 50px;
-      
-        background-color: rgb(43, 47, 49);
-        left: 10%;
-        width: 600px;
-        min-height: 250px;
-        align-content: center;
-    }
-    
-    #container{
-        margin-bottom: 200px;
-    }
-    /* footer{
-        position: absolute;
-        min-height: 60px;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(45, 50, 54);
-    } */
+#jumbo-header.jumbotron {
+  background-color: rgb(48, 140, 180);
+}
+#jumbo-header.jumbotron h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.navbar {
+  background-color: rgb(48, 140, 180);
+  color: rgb(255, 255, 255);
+}
+.navbar a {  
+  background-color: rgb(48, 140, 180);
+  color: rgb(255, 255, 255);
+}
+.navbar-nav {
+}
+#maincontent {
+  width: 90%;
+  background-color:#eee;
+}
+#contentcontainer {
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+}
+#menucontainer {  
+  margin: 30px 30px 30px 30px;
+}
+#avatarcontainer {
+  margin: 30px 30px 30px 30px;
+}
+ 
+.page-footer {
+  background-color: rgb(69, 82, 110);
+}
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+a.carousel-control-prev, a.carousel-control-next {
+  width: 7%;
+}
+ 
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0; 
+  margin: 10px 10px 10px 2px ;
+   
+}
+.accordioncontainer{
+  margin-top: 20%;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: 0; 
+  margin: 10px 2px 10px 10px ;
+}
+.carousel-indicators{
+  margin: 0;
+  position: absolute  ;
+  bottom: 0 ;
+}
+.carousel-indicators li{
+  background-color: black;
+  bottom: 0 ;
+   
+}
+ 
+.card-header {
+background-color: rgb(9, 96, 155);
+color:rgb(223, 231, 243);
+text-transform: uppercase;
+}
+.card-header a{
+  text-decoration: none;
+color:rgb(223, 231, 243);
+text-transform: uppercase;
+}
+.card-body {
+  padding: 0;
+}
+.carousel-inner {
+  padding: 1.25rem  ;
+  background-color: rgb(206, 206, 206);
+}
+footer {
+  color:rgb(223, 231, 243);
+}
+ 
+.btn {
+  color:rgb(223, 231, 243);
+  
+} 
