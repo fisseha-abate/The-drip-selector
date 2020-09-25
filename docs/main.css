@@ -94,3 +94,13 @@ footer {
   color:rgb(223, 231, 243);
   
 } 
+@media (min-width: 992px) {
+  #avatarpic {
+    position: sticky; top: 15%;
+  }
+   
+}
+.fa-chevron-down:before {
+  content: "\f078";
+  right: 0;
+}
