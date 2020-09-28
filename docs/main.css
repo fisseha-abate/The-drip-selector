@@ -96,7 +96,7 @@ footer {
 } 
 @media (min-width: 992px) {
   #avatarpic {
-    position: sticky; top: 15%;
+                position: sticky; top: 15%;
   }
    
 }
