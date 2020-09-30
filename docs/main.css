@@ -126,11 +126,13 @@ footer {
 
 .clothes-top {
   width: 228px;
-  height: 160px;
+  height: 180px;
+  z-index: 1;
 }
 .clothes-bottom {
   width: 228px;
   height: 230px;
+  z-index: 3;
 }
 .clothes-shoes {
   width: 228px;
