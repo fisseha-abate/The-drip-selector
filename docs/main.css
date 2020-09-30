@@ -106,8 +106,9 @@ footer {
 .bgimg {
   background-image: url("man.png");
   background-repeat: no-repeat;
-  min-height: 620px;
+  height: 620px;
   background-position: center;
+  width: 228px;
 }
 
 .top {
