@@ -1,435 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>The Drip Selector</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <!-- jquery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>The Drip Selector</title>
 
-    <!-- font awesome css -->
-    <script
-      src="https://kit.fontawesome.com/e4b7cacf78.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="main.css" />
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <!-- jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <body>
-    <!-- the navbar    -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>ENTANGLEMENT</strong></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="slick.php">Sign up</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <!-- font awesome css -->
+  <script src="https://kit.fontawesome.com/e4b7cacf78.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
 
-    <!-- this contains the blue banner-->
-    <div id="jumbo-header" class="jumbotron jumbotron-fluid">
-      <div class="container-fluid">
-        <h1 class="display-4">SELECT YOUR DRIP</h1>
+<body>
+  <!-- the navbar    -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><strong>ENTANGLEMENT</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="slick.php">Sign up</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- this contains the main content of the whole site-->
-    <div id="maincontent" class="container-fluid">
-      <!-- this contains both the avatar and the menus-->
-      <div id="contentcontainer " class="row">
-        <!-- this contains the  menus -->
-        <div id="menucontainer" class="col-xm-12 col-lg-6">
-          <!-- this containes the accordian menus -->
+  <!-- this contains the blue banner-->
+  <div id="jumbo-header" class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <h1 class="display-4">SELECT YOUR DRIP</h1>
+    </div>
+  </div>
 
-          <!-- --------------------------------- accordion cards start here---------------------------------------- -->
+  <!-- this contains the main content of the whole site-->
+  <div id="maincontent" class="container-fluid">
+    <!-- this contains both the avatar and the menus-->
+    <div id="contentcontainer " class="row">
+      <!-- this contains the  menus -->
+      <div id="menucontainer" class="col-xm-12 col-lg-6">
+        <!-- this containes the accordian menus -->
 
-          <div
-            class="accordioncontainer"
-            id="accordion"
-            role="tablist"
-            aria-multiselectable="true"
-          >
-            <!-- ---------------------------------*** tops section ***---------------------------------------- -->
+        <!-- --------------------------------- accordion cards start here---------------------------------------- -->
 
-            <div class="card">
-              <!-- tops card header -->
-              <h5 class="card-header" role="tab" id="headingOne">
-                <a
-                  data-toggle="collapse"
-                  href="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                  class="d-block"
-                >
-                  <i class="fa fa-chevron-down pull-right"></i> TOPS
-                </a>
-              </h5>
-              <div
-                id="collapseOne"
-                class="collapse show"
-                role="tabpanel"
-                aria-labelledby="headingOne"
-              >
-                <!-- tops card content conatiner -->
-                <div class="card-body">
-                  <!-- carousel conatiner -->
+        <div class="accordioncontainer" id="accordion" role="tablist" aria-multiselectable="true">
+          <!-- ---------------------------------*** tops section ***---------------------------------------- -->
 
-                  <div
-                    id="demotop"
-                    class="carousel slide"
-                    data-interval="false"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                      <li
-                        data-target="#demotop"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#demotop" data-slide-to="1"></li>
-                      <li data-target="#demotop" data-slide-to="2"></li>
-                    </ul>
+          <div class="card">
+            <!-- tops card header -->
+            <h5 class="card-header" role="tab" id="headingOne">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                class="d-block">
+                <i class="fa fa-chevron-down pull-right"></i> TOPS
+              </a>
+            </h5>
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <!-- tops card content conatiner -->
+              <div class="card-body">
+                <!-- carousel conatiner -->
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <!-- First Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_1.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_2.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_3.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                <div id="demotop" class="carousel slide" data-interval="false" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demotop" data-slide-to="0" class="active"></li>
+                    <li data-target="#demotop" data-slide-to="1"></li>
+                    <li data-target="#demotop" data-slide-to="2"></li>
+                  </ul>
 
-                      <div class="carousel-item">
-                        <!-- Second Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_4.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_5.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_6.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <!-- Second Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_7.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_8.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-top col-md-4"
-                              src="Images/IMG_9.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!-- First Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-top col-md-4" src="Images/IMG_1.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.asos.com/au/asos-design/asos-design-skinny-western-denim-jacket-in-mid-wash/prd/11960718?colourwayid=16398540&SearchQuery=&cid=11908"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.asos.com/au/men/jackets-coats/denim-jackets/cat/?channelref=paid%20search&cid=11908&gclid=Cj0KCQjwoJX8BRCZARIsAEWBFMIQ0rlJDRXcggAL6rYV7bxqkZlGL5WQ1UaVeVd07mv1uWeQ48S-718aAj10EALw_wcB&gclsrc=aw.ds&page=1&scrollTo=product-11960718"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_2.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.endclothing.com/au/rains-puffer-vest-1509-bk.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?q=vest"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_3.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.endclothing.com/au/penfield-walkabout-puffer-jacket-pfm111791120-yl.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?q=puffer"
+                            target="_blank" class="button">View Similar Items</a>
                         </div>
                       </div>
                     </div>
 
-                    <!-- Left and right controls -->
-                    <a
-                      class="carousel-control-prev"
-                      href="#demotop"
-                      data-slide="prev"
-                    >
-                      <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a
-                      class="carousel-control-next"
-                      href="#demotop"
-                      data-slide="next"
-                    >
-                      <span class="carousel-control-next-icon"></span>
-                    </a>
+                    <div class="carousel-item">
+                      <!-- Second Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-top col-md-4" src="Images/IMG_4.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.gluestore.com.au/products/titus-bomber-jacket-in-black"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/search?q=bomber"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_5.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.endclothing.com/au/fred-perry-reissues-original-twin-tipped-polo-m12-106.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?q=polo"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_6.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.endclothing.com/au/fred-perry-reissues-twin-tipped-polo-m12-m20.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?q=polo"
+                            target="_blank" class="button">View Similar Items</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- Third Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-top col-md-4" src="Images/IMG_7.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.gluestore.com.au/products/plain-crew-t-shirt-in-wine"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/collections/mens-t-shirts"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_8.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.kmart.com.au/product/plain-crew-neck-tee/2433803"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/collections/mens-t-shirts"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-top col-md-4" src="Images/IMG_9.PNG" alt="Dog GIF" />
+
+                          <a href="https://www.kmart.com.au/product/loose-fit-tee/3160338"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/collections/mens-t-shirts"
+                            target="_blank" class="button">View Similar Items</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demotop" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demotop" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- ---------------------------------*** bottoms section ***---------------------------------------- -->
+          <!-- ---------------------------------*** bottoms section ***---------------------------------------- -->
 
-            <div class="card">
-              <!-- bottoms card header -->
-              <h5 class="card-header" role="tab" id="headingTwo">
-                <a
-                  class="collapsed d-block"
-                  data-toggle="collapse"
-                  href="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <i class="fa fa-chevron-down pull-down"></i> BOTTOMS
-                </a>
-              </h5>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                role="tabpanel"
-                aria-labelledby="headingTwo"
-              >
-                <!-- bottoms card content conatiner -->
-                <div class="card-body">
-                  <!-- carousel conatiner -->
+          <div class="card">
+            <!-- bottoms card header -->
+            <h5 class="card-header" role="tab" id="headingTwo">
+              <a class="collapsed d-block" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                <i class="fa fa-chevron-down pull-down"></i> BOTTOMS
+              </a>
+            </h5>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <!-- bottoms card content conatiner -->
+              <div class="card-body">
+                <!-- carousel conatiner -->
 
-                  <div
-                    id="demobot"
-                    class="carousel slide"
-                    data-interval="false"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                      <li
-                        data-target="#demobot"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#demobot" data-slide-to="1"></li>
-                      <li data-target="#demobot" data-slide-to="2"></li>
-                    </ul>
+                <div id="demobot" class="carousel slide" data-interval="false" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demobot" data-slide-to="0" class="active"></li>
+                    <li data-target="#demobot" data-slide-to="1"></li>
+                    <li data-target="#demobot" data-slide-to="2"></li>
+                  </ul>
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <!-- First Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_10.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_11.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_12.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!-- First Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_10.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://fasttimes.com.au/apparel/bottoms"
+                            target="_blank" class="button">View Similar Items</a>
 
-                      <div class="carousel-item">
-                        <!-- Second Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_13.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_14.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_15.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <!-- Second Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_16.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_17.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-bottom col-md-4"
-                              src="Images/IMG_18.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_11.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://fasttimes.com.au/apparel/bottoms"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_12.PNG" alt="Dog GIF" />
+                          <a href="https://www.gluestore.com.au/products/874-original-fit-work-pants-in-tan-khaki"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?colour=Brown&q=Khaki%20Pants"
+                            target="_blank" class="button">View Similar Items</a>
                         </div>
                       </div>
                     </div>
 
-                    <!-- Left and right controls -->
-                    <a
-                      class="carousel-control-prev"
-                      href="#demobot"
-                      data-slide="prev"
-                    >
-                      <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a
-                      class="carousel-control-next"
-                      href="#demobot"
-                      data-slide="next"
-                    >
-                      <span class="carousel-control-next-icon"></span>
-                    </a>
+                    <div class="carousel-item">
+                      <!-- Second Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_13.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?colour=Brown&q=Khaki%20Pants"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_14.PNG" alt="Dog GIF" />
+                          <a href="https://www.gluestore.com.au/products/boden-joggers-in-stone"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/search?q=joggers"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_15.PNG" alt="Dog GIF" />
+                          <a href="https://www.gluestore.com.au/products/blake-moto-jogger-pants-in-vintage-blues-denim"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/search?q=jeans"
+                            target="_blank" class="button">View Similar Items</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- Third Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_16.PNG" alt="Dog GIF" />
+                          <a href="https://www.gluestore.com.au/products/blake-moto-jogger-pants-in-vintage-blues-denim"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.gluestore.com.au/search?q=jeans"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_17.PNG" alt="Dog GIF" />
+                          <a href="https://www.endclothing.com/au/edwin-ed-80-slim-tapered-jean-i025964-f8ml.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?colour=Black&q=jeans"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-bottom col-md-4" src="Images/IMG_18.PNG" alt="Dog GIF" />
+                          <a href="https://www.endclothing.com/au/edwin-ed-80-slim-tapered-jean-i025964-f8ml.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://www.endclothing.com/au/catalogsearch/results?colour=Black&q=jeans"
+                            target="_blank" class="button">View Similar Items</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demobot" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demobot" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- ---------------------------------*** shoes section ***---------------------------------------- -->
+          <!-- ---------------------------------*** shoes section ***---------------------------------------- -->
 
-            <div class="card">
-              <!-- shoes card header -->
-              <h5 class="card-header" role="tab" id="headingThree">
-                <a
-                  class="collapsed d-block"
-                  data-toggle="collapse"
-                  href="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  shoes<i class="fa fa-chevron-down pull-right"></i>
-                </a>
-              </h5>
-              <div
-                id="collapseThree"
-                class="collapse"
-                role="tabpanel"
-                aria-labelledby="headingThree"
-              >
-                <!-- shoes card content container -->
-                <div class="card-body">
-                  <!-- carousel conatiner -->
+          <div class="card">
+            <!-- shoes card header -->
+            <h5 class="card-header" role="tab" id="headingThree">
+              <a class="collapsed d-block" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                shoes<i class="fa fa-chevron-down pull-right"></i>
+              </a>
+            </h5>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <!-- shoes card content container -->
+              <div class="card-body">
+                <!-- carousel conatiner -->
 
-                  <div
-                    id="demosho"
-                    class="carousel slide"
-                    data-interval="false"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                      <li
-                        data-target="#demosho"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#demosho" data-slide-to="1"></li>
-                      <li data-target="#demosho" data-slide-to="2"></li>
-                    </ul>
+                <div id="demosho" class="carousel slide" data-interval="false" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demosho" data-slide-to="0" class="active"></li>
+                    <li data-target="#demosho" data-slide-to="1"></li>
+                    <li data-target="#demosho" data-slide-to="2"></li>
+                  </ul>
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <!-- First Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img
-                              class="clothing-shoes col-md-4"
-                              src="Images/IMG_21.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-shoes col-md-4"
-                              src="Images/IMG_20.PNG"
-                              alt="Dog GIF"
-                            />
-                            <img
-                              class="clothing-shoes col-md-4"
-                              src="Images/IMG_19.PNG"
-                              alt="Dog GIF"
-                            />
-                          </div>
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!-- First Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="clothing-shoes col-md-4" src="Images/IMG_21.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://fasttimes.com.au/footwear?pos_brands=converse"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-shoes col-md-4" src="Images/IMG_20.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://fasttimes.com.au/footwear?pos_brands=converse"
+                            target="_blank" class="button">View Similar Items</a>
+
+                          <img class="clothing-shoes col-md-4" src="Images/IMG_19.PNG" alt="Dog GIF" />
+                          <a href="https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html"
+                            target="_blank" class="button">Purchase</a>
+                          <a href="https://fasttimes.com.au/footwear?pos_brands=converse"
+                            target="_blank" class="button">View Similar Items</a>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <!-- commented out other items on the carousel below as may not use them because don't have the amount of shoes -->
-                    <!-- 
+                  <!-- commented out other items on the carousel below as may not use them because don't have the amount of shoes -->
+                  <!-- 
                   <div class="carousel-item">
                     
                     <div class="d-flex justify-content-around">
@@ -455,222 +382,165 @@
                 </div>
               </div> -->
 
-                    <!-- Left and right controls -->
-                    <a
-                      class="carousel-control-prev"
-                      href="#demosho"
-                      data-slide="prev"
-                    >
-                      <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a
-                      class="carousel-control-next"
-                      href="#demosho"
-                      data-slide="next"
-                    >
-                      <span class="carousel-control-next-icon"></span>
-                    </a>
-                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demosho" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demosho" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
                 </div>
-              </div>
-            </div>
-
-            <!-- ---------------------------------*** accesories section ***--------------------------------------- -->
-
-            <div class="card">
-              <!-- *** accesories card header  *** -->
-              <h5 class="card-header" role="tab" id="headingFour">
-                <a
-                  class="collapsed d-block"
-                  data-toggle="collapse"
-                  href="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  <i class="fa fa-chevron-down pull-right"></i>accesories
-                </a>
-              </h5>
-              <div
-                id="collapseFour"
-                class="collapse"
-                role="tabpanel"
-                aria-labelledby="headingFour"
-              >
-                <!-- accesories card conetent container  -->
-                <div class="card-body">
-                  <!-- carousel conatiner -->
-
-                  <div
-                    id="sildeacc"
-                    class="carousel slide"
-                    data-interval="false"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                      <li
-                        data-target="#sildeacc"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#sildeacc" data-slide-to="1"></li>
-                      <li data-target="#sildeacc" data-slide-to="2"></li>
-                    </ul>
-
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <!-- First Slide -->
-                        <div class="d-flex justify-content-around">
-                          <!-- Flex Slide Box -->
-                          <div class="row">
-                            <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                            <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                            <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item">
-                      <!-- Second Slide -->
-                      <div class="d-flex justify-content-around">
-                        <!-- Flex Slide Box -->
-                        <div class="row">
-                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <!-- Second Slide -->
-                      <div class="d-flex justify-content-around">
-                        <!-- Flex Slide Box -->
-                        <div class="row">
-                          <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
-                          <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
-                          <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a
-                  class="carousel-control-prev"
-                  href="#sildeacc"
-                  data-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#sildeacc"
-                  data-slide="next"
-                >
-                  <span class="carousel-control-next-icon"></span>
-                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- ------------------------------------------------------------------------- -->
+          <!-- ---------------------------------*** accesories section ***--------------------------------------- -->
+
+          <div class="card">
+            <!-- *** accesories card header  *** -->
+            <h5 class="card-header" role="tab" id="headingFour">
+              <a class="collapsed d-block" data-toggle="collapse" href="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                <i class="fa fa-chevron-down pull-right"></i>accesories
+              </a>
+            </h5>
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+              <!-- accesories card conetent container  -->
+              <div class="card-body">
+                <!-- carousel conatiner -->
+
+                <div id="sildeacc" class="carousel slide" data-interval="false" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#sildeacc" data-slide-to="0" class="active"></li>
+                    <li data-target="#sildeacc" data-slide-to="1"></li>
+                    <li data-target="#sildeacc" data-slide-to="2"></li>
+                  </ul>
+
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!-- First Slide -->
+                      <div class="d-flex justify-content-around">
+                        <!-- Flex Slide Box -->
+                        <div class="row">
+                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                          <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <!-- Second Slide -->
+                    <div class="d-flex justify-content-around">
+                      <!-- Flex Slide Box -->
+                      <div class="row">
+                        <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                        <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                        <img class="col-md-4" src="ab.jpg" alt="Dog GIF" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <!-- Second Slide -->
+                    <div class="d-flex justify-content-around">
+                      <!-- Flex Slide Box -->
+                      <div class="row">
+                        <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
+                        <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
+                        <img class="col-md-4" src="cd.jpg" alt="Dog GIF" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#sildeacc" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#sildeacc" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="row">
-        <div>
-          <button id="randomize" type="button" class="btn btn-primary ml-5">
-            Randomize
-          </button>
-        </div>
-        <div>
-          <button id="save-outfit" type="button" class="btn btn-primary ml-2">
-            Save Outfit
-          </button>
-        </div>
-        <div>
-          <button id="load-outfit" type="button" class="btn btn-primary ml-2">
-            Load Outfit
-          </button>
-        </div>
-      </div>
-
-      <!-- this contains the avatar -->
-
-      <div class="col-xs-12 col-lg-3 text-center bgimg" id="avatarcontainer">
-        <div class="top">
-          <img
-            id="avatar-top"
-            class="clothes-top img-fluid"
-            src="Images/IMG_1.PNG"
-            alt=""
-          />
-        </div>
-        <div class="bottom">
-          <img
-            id="avatar-bottom"
-            class="clothes-bottom img-fluid"
-            src="Images/IMG_15.PNG"
-            alt=""
-          />
-        </div>
-        <div class="shoes">
-          <img
-            id="avatar-shoes"
-            class="clothes-shoes img-fluidL"
-            src="Images/IMG_20.PNG"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <!-- ---------------------------------accordion cards end here---------------------------------------- -->
+      <!-- ------------------------------------------------------------------------- -->
     </div>
 
-    <!-- Footer -->
-
-    <!-- Footer -->
-    <footer class="page-footer font-small blue">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2020 Copyright:
-        <a href="index.html">ENTANGLEMENT</a>
+    <div class="row">
+      <div>
+        <button id="randomize" type="button" class="btn btn-primary ml-5">
+          Randomize
+        </button>
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+      <div>
+        <button id="save-outfit" type="button" class="btn btn-primary ml-2">
+          Save Outfit
+        </button>
+      </div>
+      <div>
+        <button id="load-outfit" type="button" class="btn btn-primary ml-2">
+          Load Outfit
+        </button>
+      </div>
+    </div>
 
-    <!-- // Footer -->
+    <!-- this contains the avatar -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <!-- slick -->
+    <div class="col-xs-12 col-lg-3 text-center bgimg" id="avatarcontainer">
+      <div class="top">
+        <img id="avatar-top" class="clothes-top img-fluid" src="Images/IMG_1.PNG" alt="" />
+      </div>
+      <div class="bottom">
+        <img id="avatar-bottom" class="clothes-bottom img-fluid" src="Images/IMG_15.PNG" alt="" />
+      </div>
+      <div class="shoes">
+        <img id="avatar-shoes" class="clothes-shoes img-fluidL" src="Images/IMG_20.PNG" alt="" />
+      </div>
+    </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-    ></script>
+    <!-- ---------------------------------accordion cards end here---------------------------------------- -->
+  </div>
 
-    <!-- // slick -->
+  <!-- Footer -->
 
-    <script src="Scripts/index.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright:
+      <a href="index.html">ENTANGLEMENT</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- // Footer -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- slick -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous"></script>
+
+  <!-- // slick -->
+
+  <script src="Scripts/index.js"></script>
+</body>
+
 </html>
