@@ -136,3 +136,18 @@ footer {
   width: 150px;
   height: 60px;
 }
+  .button {
+    background-color: #1c87c9;
+    border-style: groove;
+    border-width: medium;
+    color: #FFFFFF;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 8px 2px;
+    cursor: pointer;
+    height: 60px;
+    width: auto;
+  }
