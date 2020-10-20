@@ -1,0 +1,44 @@
+{
+    "walking": {
+        
+        "name": "Walking",
+        "image":  "images/IMG_1.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    },
+    "hoodie1grey": {
+    
+        "name": "hoodiegrey",
+        "image":  "images/IMG_11.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    },
+    "hoo1diegrey": {
+        
+        "name": "hoodiegrey",
+        "image": "images/IMG_11.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    },
+    "hoodie2grey": {
+     
+        "name": "hoodiegrey",
+        "image": "images/IMG_11.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    },
+    "hood32iegrey": {
+      
+        "name": "hoodiegrey",
+        "image": "images/IMG_11.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    },
+    "hood3iegrey": {
+        
+        "name": "hoodiegrey",
+        "image": "images/IMG_11.PNG",
+        "purchase":"https://www.youtube.com/",
+        "similar":"https://twitter.com/"
+    }
+}
