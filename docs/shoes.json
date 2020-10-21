@@ -1,0 +1,20 @@
+{
+    "shoes": {
+        "name": "shoes",
+        "image": "images/IMG_19.PNG",
+        "purchase": "https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html",
+        "similar": "https://fasttimes.com.au/footwear?pos_brands=converse"
+    },
+    "shoes_1": {
+        "name": "shoes_1",
+        "image": "images/IMG_20.PNG",
+        "purchase": "https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html",
+        "similar": "https://fasttimes.com.au/footwear?pos_brands=converse"
+    },
+    "shoes_2": {
+        "name": "shoes_2",
+        "image": "images/IMG_21.PNG",
+        "purchase": "https://fasttimes.com.au/converse-one-star-pro-low-white-enamel-red-egret.html",
+        "similar": "https://fasttimes.com.au/footwear?pos_brands=converse"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "black_sweats": {
+        "name": "black_sweats",
+        "image": "images/IMG_10.PNG",
+        "purchase": "https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html",
+        "similar": "https://fasttimes.com.au/apparel/bottoms"
+    },
+    "khaki_pants": {
+        "name": "khaki_pants",
+        "image": "images/IMG_12.PNG",
+        "purchase": "https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html",
+        "similar": "https://www.endclothing.com/au/catalogsearch/results?colour=Brown&q=Khaki%20Pants"
+    },
+    "black_pants": {
+        "name": "black_pants",
+        "image": "images/IMG_11.PNG",
+        "purchase": "https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html",
+        "similar": "https://fasttimes.com.au/apparel/bottoms"
+    },
+    "navy_pants": {
+        "name": "naby_pants",
+        "image": "images/IMG_13.PNG",
+        "purchase": "https://fasttimes.com.au/dickies-medina-original-fit-pants-black.html",
+        "similar": "https://fasttimes.com.au/apparel/bottoms"
+    },
+    "tan_sweats": {
+        "name": "tan_sweats",
+        "image": "images/IMG_14.PNG",
+        "purchase": "https://www.gluestore.com.au/products/boden-joggers-in-stone",
+        "similar": "https://www.gluestore.com.au/search?q=joggers"
+    },
+    "jeans_1": {
+        "name": "jeans_1",
+        "image": "images/IMG_15.PNG",
+        "purchase": "https://www.gluestore.com.au/products/blake-moto-jogger-pants-in-vintage-blues-denim",
+        "similar": "https://www.gluestore.com.au/search?q=jeans"
+    },
+    "jeans_2": {
+        "name": "jeans_2",
+        "image": "images/IMG_16.PNG",
+        "purchase": "https://www.gluestore.com.au/products/blake-moto-jogger-pants-in-vintage-blues-denim",
+        "similar": "https://www.gluestore.com.au/search?q=jeans"
+    },
+    "jeans_3": {
+        "name": "jeans_3",
+        "image": "images/IMG_17.PNG",
+        "purchase": "https://www.endclothing.com/au/edwin-ed-80-slim-tapered-jean-i025964-f8ml.html",
+        "similar": "https://www.endclothing.com/au/catalogsearch/results?colour=Black&q=jeans"
+    },
+    "jeans_4": {
+        "name": "jeans_4",
+        "image": "images/IMG_18.PNG",
+        "purchase": "https://www.endclothing.com/au/edwin-ed-80-slim-tapered-jean-i025964-f8ml.html",
+        "similar": "https://www.endclothing.com/au/catalogsearch/results?colour=Black&q=jeans"
+    },
+}
